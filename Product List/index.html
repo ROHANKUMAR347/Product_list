@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="controls">
+        <input type="text" id="searchInput" placeholder="Search..." />
+        <select id="filterSelect">
+          <option value="">All Categories</option>
+          <!-- Populate categories dynamically -->
+        </select>
+        <button onclick="sortByName()">Sort by Name</button>
+        <button onclick="sortByPrice()">Sort by Price</button>
+        <button onclick="toggleView()">Toggle View</button>
+      </div>
+      <div class="products" id="productContainer">
+        <!-- Product cards will be displayed here -->
+      </div>
+    </div>
+    <script src="./Script.js"></script>
+  </body>
+</html>
